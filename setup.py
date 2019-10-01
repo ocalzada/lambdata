@@ -5,9 +5,7 @@ import setuptools
 
 REQUIRED = [
     "numpy",
-    "pandas",
-    "requests",
-    "json"
+    "pandas"
 ]
 
 with open("README.md", "r") as fh:
