@@ -9,6 +9,9 @@ twine = "*"
 [packages]
 numpy = "*"
 pandas = "*"
+requests = "*"
+json = "*"
 
 [requires]
 python_version = "3.7"
+jsonlib_version = "1.6.1"
