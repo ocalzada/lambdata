@@ -9,13 +9,14 @@ df = pd.DataFrame({'Owner City State Zip': ["Fontana, CA 92336", "Los Angeles, C
 # returns a dataframe with each component in a separate column
 
 class Splitter:
+
     """"
     Splitter - a class to help split-up databases into its components.
     """
-    def __init__(self, df):
+    def __init__(self):
         self.df = df
         self.cols = df.columns
         
-    def split_address(df):
+    def split_address(self, df):
         regex = r'(?P<City>[^,]+)\s*,\s*(?P<State>[^\s]+)\s+(?P<Zip>\S+)'
         return df['Owner City State Zip'].str.extract(regex)
