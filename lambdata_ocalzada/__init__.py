@@ -8,15 +8,15 @@ import pandas as pd
 # this function splits an address into its constituent City, State, Zip code parts & 
 # returns a dataframe with each component in a separate column
 
-class Splitter:
+class Splitter():
 
     """"
     Splitter - a class to help split-up databases into its components.
     """
-    def __init__(self):
+    def __init__(self, df):
         self.df = df
         self.cols = df.columns
         
-    def split_address(self, df):
+    def split_address(self):
         regex = r'(?P<City>[^,]+)\s*,\s*(?P<State>[^\s]+)\s+(?P<Zip>\S+)'
-        return df['Owner City State Zip'].str.extract(regex)
+        return self.df['Owner City State Zip'].str.extract(regex)
