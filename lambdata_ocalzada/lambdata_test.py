@@ -1,8 +1,6 @@
-
 import unittest
 from df_utils import Splitter
 import pandas as pd
-
 
 class TestSplitter(unittest.TestCase):
     '''Testing Splitter function.'''
@@ -12,7 +10,7 @@ class TestSplitter(unittest.TestCase):
                         "Salt Lake City, UT 84106", "Brookline, MA 02445"]})
         s = Splitter(df)
         new_df = s.split_address()
-        self.assertEqual(new_df.columns, 3)
+        self.assertEqual(new_df.shape, (4,3))
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ import pandas as pd
 # this function splits an address into its constituent City, State, Zip code parts & 
 # returns a dataframe with each component in a separate column
 
-class Splitter():
+class Splitter:
 
     """"
     Splitter - a class to help split-up databases into its components.
