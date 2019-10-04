@@ -1,4 +1,4 @@
-# :+1 Helper Functions by ocalzada :+1
+# :thumbsup: Helper Functions by ocalzada :thumbsup:
 
 This package contains useful data science helper functions. 
 
